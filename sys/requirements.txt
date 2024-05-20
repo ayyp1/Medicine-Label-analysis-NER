@@ -1,0 +1,7 @@
+paddlepaddle
+paddleocr
+matplotlib
+opencv-python
+spacy
+mysql-connector-python
+pillow
