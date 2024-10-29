@@ -31,7 +31,7 @@ Normal_font=('Ubuntu' , 14 )
 scroll_font= ('Ubuntu' , 10)
 
 #background image 
-bg = ImageTk.PhotoImage(file = "GUI/tkinter-app/pharms.jpg") 
+bg = ImageTk.PhotoImage(file = "GUI/pharms.jpg") 
 background_label = tk.Label(my_w, image=bg)
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
 
@@ -121,7 +121,7 @@ def app(click):
       img=ImageTk.PhotoImage(img_resized)
 
     #save the image in a folder called 'upload images'
-    save_folder = 'GUI/tkinter-app/uploaded_images/'
+    save_folder = 'GUI/uploaded_images/'
     os.makedirs(save_folder, exist_ok=True)
     save_path = os.path.join(save_folder, 'med.jpg')
     ocr_img.save(save_path)
@@ -137,7 +137,7 @@ def app(click):
     image_label.grid( row = 1, column=1 , pady=50 , padx = 250 )
     
     #apply ocr 
-    result = ocr_model.ocr(os.path.join('GUI/tkinter-app/uploaded_images/med.jpg'))
+    result = ocr_model.ocr(os.path.join('GUI/uploaded_images/med.jpg'))
     if result:  
       output=" "
       for res in result:
@@ -151,7 +151,7 @@ def app(click):
        result = "null"
     #import model
     ent_list=[]
-    nlp_ner = spacy.load("GUI/tkinter-app/model-best")
+    nlp_ner = spacy.load("GUI/model-best")
     doc = nlp_ner(output)
     for ent in doc.ents:
       if ent.label_ == 'COMPOSITION NAME' or 'COMMON NAME' :
