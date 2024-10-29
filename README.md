@@ -1,12 +1,12 @@
 # 💻 Minor-Project
 
-1. A desktop application
-2. Upload image of backside of medicine blister packet (with label information printed)
-3. Detailed information about medicine and it's consumption from reliable source
-4. Medicine collection from Nepalese Authority 
+1. A desktop application.
+2. Upload image of backside of medicine blister packet (with label information printed).
+3. Detailed information about medicine and it's consumption from reliable source.
+4. Medicine collection from Nepalese Authority.
 ---
 
-# Table of Contents
+# 📋 Table of Contents
 
 - [Minor Project](#-minor-project)
 - [Requirements](#️-requirements)
@@ -36,8 +36,8 @@ To run the notebooks locally, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/MLchemy.git
-   cd MLchemy
+   git clone https://github.com/xaxm007/Minor-Project.git
+   cd Minor-Project
    ```
 
    `Recommended`, Follow steps to use conda env:
