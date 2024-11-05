@@ -66,6 +66,12 @@ To run the notebooks locally, follow these steps:
    pip install -r requirements.txt
    ```
 
+   ***or*** ***create conda environment `medsys` using [environment.yml](environment.yml) file***
+
+   ```bash
+   conda env create -f environment.yml
+   ```
+
 3. **Run the Jupyter Notebooks**:
 
    Launch Jupyter Notebook:
