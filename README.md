@@ -106,3 +106,9 @@ To run the notebooks locally, follow these steps:
       LINES TERMINATED BY '\n'
       IGNORE 1 ROWS;
       ```
+
+4. **Run Python Script**:
+
+   ```bash
+   python GUI/tkinter-app/app.py
+   ```
