@@ -40,42 +40,69 @@ To run the notebooks locally, follow these steps:
    cd Minor-Project
    ```
 
-   `Recommended`, Follow steps to use conda env:
+2. **Install the required dependencies**:
 
-   1. **Create a conda env**: 
+   ***Create a conda env***: 
 
-      ```bash
-      conda create -n <your_environment_name>
-      ```
-
-   2. **Install Ipykernel for using Jupyter Notebook**:
-
-      ```bash
-      conda install ipykernel
-      ```
-
-   3. **Connect new ipykernel to the conda env**:
-
-      ```bash
-      python -m ipykernel install --user --name <your_env_name> --display-name "<new_name_for_your_kernel"
-      ```
-
-2. **Install the required dependencies** (see [Requirements](#requirements)):
+   ```bash
+   conda create -n <your_environment_name>
+   ```
 
    ```bash
    pip install -r requirements.txt
    ```
 
-   ***or*** ***create conda environment `medsys` using [environment.yml](environment.yml) file***
+   ***or create conda environment `medsys` using [environment.yml](environment.yml) file***
 
    ```bash
    conda env create -f environment.yml
    ```
+3. **Setup MySQL database**:
 
-3. **Run the Jupyter Notebooks**:
+   1. Install MySQL Server on your local machine.
 
-   Launch Jupyter Notebook:
+   2. Create Database:
 
-   ```bash
-   jupyter notebook
-   ```
+      ```bash
+      mysql --local-infile=1 -u <your-username> -p
+      ```
+
+      ```bash
+      CREATE DATABASE  <your-database-name>;
+      ```
+
+      ```bash
+      USE <your-database-name>;
+      ```
+
+      ```bash
+      CREATE TABLE <your-table-name> (
+         ID INT PRIMARY KEY,
+         DRUG_NAME TEXT,
+         DOSAGE_FORM_AND_STRENGTH LONGTEXT,
+         INDICATIONS LONGTEXT,
+         CONTRAINDICATIONS_OR_PRECAUTIONS LONGTEXT,
+         DOSAGE_SCHEDULE LONGTEXT,
+         ADVERSE_EFFECTS LONGTEXT,
+         DRUG_AND_FOOD_INTERACTIONS LONGTEXT
+      );
+      ```
+
+      ```bash
+      SHOW tables;
+      ```
+
+      ```bash
+      DESCRIBE <your-table-name>;
+      ```
+
+   3. Load csv files:
+
+      ```bash
+      LOAD DATA LOCAL INFILE '/path/to/file.csv'
+      INTO TABLE med_info
+      FIELDS TERMINATED BY ','
+      ENCLOSED BY '"'
+      LINES TERMINATED BY '\n'
+      IGNORE 1 ROWS;
+      ```
