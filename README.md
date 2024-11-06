@@ -54,7 +54,7 @@ To run the notebooks locally, follow these steps:
    ***Create a conda env***: 
 
    ```bash
-   conda create -n <your_environment_name>
+   conda create -n <your-environment-name>
    ```
 
    ```bash
@@ -142,6 +142,7 @@ To run the notebooks locally, follow these steps:
    ***Note: Fill your `username` and `password` in line `181` in app.py***
 
    ```bash
+   conda activate <your-environment-name>
    python app.py
    ```
 
