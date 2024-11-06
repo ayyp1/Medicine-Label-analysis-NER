@@ -27,6 +27,14 @@
 pip install -r requirements.txt
 ```
 
+---
+
+# 📷 Snapshots
+
+
+
+---
+
 ## 👉 How to Use
 
 To run the notebooks locally, follow these steps:
@@ -57,7 +65,7 @@ To run the notebooks locally, follow these steps:
    ```
 3. **Setup MySQL database**:
 
-   1. Install MySQL Server on your local machine.
+   1. Install MySQL Server on your local machine and start the server.
 
    2. Create Database:
 
