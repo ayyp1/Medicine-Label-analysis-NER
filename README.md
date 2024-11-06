@@ -31,6 +31,8 @@ pip install -r requirements.txt
 
 # 📷 Snapshots
 
+| ![Image 1](./GUI/screenshots/home.png) | ![Image 2](./GUI/screenshots/result.png) |
+|:--------------------------------:|:--------------------------------:|
 
 
 ---
@@ -116,5 +118,11 @@ To run the notebooks locally, follow these steps:
 4. **Run Python Script**:
 
    ```bash
-   python GUI/tkinter-app/app.py
+   cd GUI/tkinter-app
+   ```
+
+   ***Note: Fill the `username` and `password` in line `181` in app.py***
+
+   ```bash
+   python app.py
    ```
