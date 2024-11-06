@@ -22,8 +22,6 @@
 - OpenCV
 - Pillow
 - Matplotlib
-- JSON
-- TQDM
 
 ```bash
 pip install -r requirements.txt
