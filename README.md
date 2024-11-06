@@ -61,7 +61,7 @@ To run the notebooks locally, follow these steps:
    pip install -r requirements.txt
    ```
 
-   ***or create conda environment `medsys` using [environment.yml](environment.yml) file***
+   ***or create conda environment `medsys` using [environment.yml](environment.yml) file.***
 
    ```bash
    conda env create -f environment.yml
@@ -70,11 +70,13 @@ To run the notebooks locally, follow these steps:
 
    1. Install MySQL Server on your local machine and start the server.
 
-   2. Create Database:
+   2. Open MySQL with `--local-infile` enabled:
 
       ```bash
       mysql --local-infile=1 -u <your-username> -p
       ```
+
+   3. Create Database and Load CSV file:
 
       ```bash
       CREATE DATABASE  <your-database-name>;
@@ -105,16 +107,31 @@ To run the notebooks locally, follow these steps:
       DESCRIBE <your-table-name>;
       ```
 
-   3. Load csv files:
-
       ```bash
-      LOAD DATA LOCAL INFILE '/path/to/file.csv'
+      LOAD DATA LOCAL INFILE '/path/to/data.csv'
       INTO TABLE med_info
       FIELDS TERMINATED BY ','
       ENCLOSED BY '"'
       LINES TERMINATED BY '\n'
       IGNORE 1 ROWS;
       ```
+   
+      ***or create database `medicine` and table `med-info` using [setup.sql](./Database/sql/setup.sql) file.***
+
+      ***Note: adjust the CSV file path if necessary***
+
+      ```bash
+      cd Database/sql
+      source setup_db.sql;
+      ```
+
+      ***or create same database as the actual implementation using [database_copy.sql](./Database/sql/database_copy.sql) file.***
+
+      ```bash
+      cd Database/sql
+      source database_copy.sql
+      ```
+   
 
 4. **Run Python Script**:
 
@@ -122,7 +139,7 @@ To run the notebooks locally, follow these steps:
    cd GUI/tkinter-app
    ```
 
-   ***Note: Fill the `username` and `password` in line `181` in app.py***
+   ***Note: Fill your `username` and `password` in line `181` in app.py***
 
    ```bash
    python app.py
