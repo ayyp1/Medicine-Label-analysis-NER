@@ -6,7 +6,7 @@
 - Medicine collection from Nepalese Authority.
 ---
 
-# 📋 Table of Contents
+## 📋 Table of Contents
 
 - [Minor Project](#-minor-project)
 - [Requirements](#️-requirements)
@@ -15,7 +15,7 @@
 
 ---
 
-# 🛠️ Requirements
+## 🛠️ Requirements
 
 - Tkinter
 - PaddleOCR
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 ---
 
-# 📷 Snapshots
+## 📷 Snapshots
 
 | ![Image 1](./GUI/screenshots/home.png) | ![Image 2](./GUI/screenshots/result.png) |
 |:--------------------------------:|:--------------------------------:|
