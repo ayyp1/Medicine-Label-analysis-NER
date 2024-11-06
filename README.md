@@ -1,16 +1,18 @@
 # 💻 Minor-Project
 
-1. A desktop application.
-2. Upload image of backside of medicine blister packet (with label information printed).
-3. Detailed information about medicine and it's consumption from reliable source.
-4. Medicine collection from Nepalese Authority.
+- A desktop application.
+- Upload image of backside of medicine blister packet (with label information printed).
+- Detailed information about medicine and it's consumption from reliable source.
+- Medicine collection from Nepalese Authority.
 ---
 
 # 📋 Table of Contents
 
 - [Minor Project](#-minor-project)
 - [Requirements](#️-requirements)
+- [Screenshots](#-snapshots)
 - [How to Use](#-how-to-use)
+
 ---
 
 # 🛠️ Requirements
@@ -33,7 +35,6 @@ pip install -r requirements.txt
 
 | ![Image 1](./GUI/screenshots/home.png) | ![Image 2](./GUI/screenshots/result.png) |
 |:--------------------------------:|:--------------------------------:|
-
 
 ---
 
@@ -126,3 +127,5 @@ To run the notebooks locally, follow these steps:
    ```bash
    python app.py
    ```
+
+---
