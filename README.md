@@ -139,7 +139,7 @@ To run the notebooks locally, follow these steps:
    cd GUI/tkinter-app
    ```
 
-   ***Note: Fill your `username` and `password` in line `181` in app.py***
+   ***Note: Fill your `username` and `password` in line `181` in app.py to run the app.***
 
    ```bash
    conda activate <your-environment-name>
