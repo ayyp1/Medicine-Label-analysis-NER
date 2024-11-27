@@ -145,5 +145,18 @@ To run the notebooks locally, follow these steps:
    conda activate <your-environment-name>
    python app.py
    ```
+   ***Citation***:
+   If you use our code or our dataset please cite us.
+   ```bash
+   @software{Medicine Label Extraction and Analysis  ,
+   author = {Pokharel, A.K and  Maharjan, Saksham},
+   month = {10},
+   title = {{Medicine Label NER}},
+   url = {https://github.com/ayyp1/Medicine-Label-analysis-NER},
+   version = {1.0.1},
+   year = {2023}
+   ```
+
+   
 
 ---
