@@ -156,7 +156,7 @@ author = {Pokharel, A.K and  Maharjan, Saksham},
 month = {10},
 title = {{Medicine Label NER}},
 url = {https://github.com/ayyp1/Medicine-Label-analysis-NER},
-version = {1.0.1},
+version = {1.0.5},
 year = {2023}
 ```
 ---
